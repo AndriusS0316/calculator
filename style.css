@@ -36,24 +36,26 @@ button {
     color: #fff;
 }
 .lygu {
-    background-color: rgb(209, 221, 38);
-    color: #fff;
-    display: flex;
-    padding: 15px 210px;
+    color: rgb(209, 221, 38);
+    display: inline-block;
+    overflow: hidden;
     position: absolute;
-    top: 170%;
-    left: 52%;
+    top: 180%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    margin-top: 10px;
+    font-size: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: "----";
 }
 .procentai {
     background-color: rgb(221, 38, 123);
     color: #fff;
     display: flex;
-    padding: 13px 205px;
+    padding: 15px 207px;
     position: absolute;
-    top: 310%;
+    top: 300%;
     left: 52%;
     transform: translate(-50%, -50%);
     text-align: center;

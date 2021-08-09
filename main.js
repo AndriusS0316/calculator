@@ -3,12 +3,15 @@ let rez = 0;
 let random = 0;
 
 
-const history = document.querySelector('.history');
+const ats = document.querySelector('.ats');
 const plius = document.querySelector('.plius');
 const minus = document.querySelector('.minus');
-const reset = document.querySelector('.reset');
+const daugyba = document.querySelector('.daugyba');
+const dalyba = document.querySelector('.dalyba');
+const lygu = document.querySelector('.lygu');
 
-const number = document.querySelector('.number');
+const number1 = document.querySelector('.');
+const number2 = document.querySelector('.');
 
 number.innerText = rez;
 

@@ -1,51 +1,42 @@
-
 let rez = 0;
-let random = 0;
-
 
 const ats = document.querySelector('.ats');
+
 const plius = document.querySelector('.plius');
 const minus = document.querySelector('.minus');
 const daugyba = document.querySelector('.daugyba');
 const dalyba = document.querySelector('.dalyba');
-const lygu = document.querySelector('.lygu');
+
+//const lygu = document.querySelector('.lygu');
+
 const restart = document.querySelector('.restart');
 
-const number1 = document.querySelector('.');
-const number2 = document.querySelector('.');
+const number1 = document.querySelector('.number1');
+const number2 = document.querySelector('.number2');
 
-number.innerText = rez;
+
+
 
 function pliusClick() {
-
-    rez = (Math.floor(Math.random() * 100) + 1);
-    console.log(rez);
-
-    // random = parseInt(random) + rez
-    console.log("pliusas veikia");
-    
-    history.value = "Prie " + parseInt(number.innerText) + " buvo prideta " + rez;
-    
-    number.innerText = parseInt(number.innerText) + rez;
-
-    
+    ats.innerText = parseInt(number1.value) + parseInt(number2.value);
 }
 
 function minusClick() {
-    
-    rez = (Math.floor(Math.random() * 100) + 1);
-    console.log(rez);
+    ats.innerText = parseInt(number1.value) - parseInt(number2.value);
+}
 
-    // random = parseInt(random) - rez;
-    console.log("minusas veikia");
+function daugybaClick() {
+    ats.innerText = parseInt(number1.value) * parseInt(number2.value);
+}
 
-    history.value = "Is " + parseInt(number.innerText) + " buvo atimta " + rez;
-    
-    number.innerText = parseInt(number.innerText) - rez;
+function dalybaClick() {
+    ats.innerText = parseInt(number1.value) / parseInt(number2.value);
 }
 
 function restartClick() {
-    
+    number1.value = '';
+    number2.value = '';
+    ats.innerText = 'Ats.:';
 }
 
 
@@ -53,5 +44,7 @@ plius.addEventListener('click', pliusClick);
 minus.addEventListener('click', minusClick);
 daugyba.addEventListener('click', daugybaClick);
 dalyba.addEventListener('click', dalybaClick);
-lygu.addEventListener('click', lyguClick);
+
+//lygu.addEventListener('click', lyguClick);
+
 restart.addEventListener('click', restartClick);

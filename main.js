@@ -9,6 +9,7 @@ const minus = document.querySelector('.minus');
 const daugyba = document.querySelector('.daugyba');
 const dalyba = document.querySelector('.dalyba');
 const lygu = document.querySelector('.lygu');
+const restart = document.querySelector('.restart');
 
 const number1 = document.querySelector('.');
 const number2 = document.querySelector('.');
@@ -44,19 +45,13 @@ function minusClick() {
 }
 
 function restartClick() {
-    number.innerText = 0;
-    console.log("restart veikia");
-    rez = 0;
-    random = 0;
-
-    setTimeout(function(){
-        history.value = "";
-    }, 3000);
-
-    history.value = "Buvo nuspaustas \"Restart\" mygtukas"
+    
 }
 
 
 plius.addEventListener('click', pliusClick);
 minus.addEventListener('click', minusClick);
-reset.addEventListener('click', restartClick);
+daugyba.addEventListener('click', daugybaClick);
+dalyba.addEventListener('click', dalybaClick);
+lygu.addEventListener('click', lyguClick);
+restart.addEventListener('click', restartClick);

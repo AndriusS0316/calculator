@@ -15,7 +15,7 @@ button {
     font-size: 50px;
     line-height: 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 4px 10px #0002;
 }
@@ -27,27 +27,20 @@ button {
     background-color: green;
     color: #fff;
 }
-.number {
-    padding: 10px 30px;
-    font-size: 50px;
-    line-height: 30px;
+.dalyba {
+    background-color: orangered;
+    color: #fff;
 }
-.reset {
-    background-color: aqua;
+.daugyba {
+    background-color: yellowgreen;
+    color: #fff;
 }
-.history {
-    display: flex;
-    gap: 300px;
-    position: absolute;
-    top: 170%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.lygu {
+    background-color: rgb(209, 221, 38);
+    color: #fff;
 }
-#history {
-    height: 50%;
-    width: 70%;
-}
+
+
 ::placeholder {
     font-size: 25px;
 }

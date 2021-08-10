@@ -58,26 +58,30 @@ function dalybaClick() {
     }
 }
 
-function saknisClick() {
-    if (number1.value !== '' && number2.value == '') {
+function saknisClick() { 
+    if (number1.value < 0 || number2.value < 0) {
+        alert("Norint ištraukti, kvadratinę šaknį, \"number\" reikšmė privalo būti teigiamas skaičius.");
+        lygu.innerText = "Neleistinas veiksmas";
+    } else if (number1.value !== '' && number2.value == '') {
         ats.innerText = Math.sqrt(parseInt(number1.value));
-        lygu.innerText = "Buvo ištraukta šaknis iš " + parseInt(number1.value);
+        lygu.innerText = "Buvo ištraukta, kvadratinė šaknis, iš " + parseInt(number1.value);
     } else if (number1.value == '' && number2.value !== '') {
         ats.innerText = Math.sqrt(parseInt(number2.value));
-        lygu.innerText = "Buvo ištraukta šaknis iš " + parseInt(number2.value);
+        lygu.innerText = "Buvo ištraukta, kvadratinė šaknis, iš " + parseInt(number2.value);
     } else if (number1.value !== '' && number2.value !== '') {
-        alert("Neleistinas veiksmas. Norint ištraukti šaknį turi būti užpildytas tik vienas \"number\" laukelis.");
+        alert("Neleistinas veiksmas. Norint ištraukti, kvadratinę šaknį, turi būti užpildytas tik vienas \"number\" laukelis.");
         lygu.innerText = "Neleistinas veiksmas";
     } else if (number1.value == '' && number2.value == '') {
-        alert("Norint ištraukti šaknį, būtina užpildyti vieną \"number\" laukelį");
+        alert("Norint ištraukti, kvadratinę šaknį, būtina užpildyti vieną \"number\" laukelį");
         lygu.innerText = "Neleistinas veiksmas";
-    }
-    
+    } 
 }
 
-function saknisKubuClick() {
-    console.log("kubine saknis veikia");
-    if (number1.value !== '' && number2.value == '') {
+function saknisKubuClick() { 
+    if (number1.value < 0 || number2.value < 0) {
+        alert("Norint ištraukti, kūbinę šaknį, \"number\" reikšmė privalo būti teigiamas skaičius.");
+        lygu.innerText = "Neleistinas veiksmas";
+    } else if (number1.value !== '' && number2.value == '') {
         ats.innerText = Math.cbrt(parseInt(number1.value));
         lygu.innerText = "Buvo ištraukta, kūbinė šaknis, iš " + parseInt(number1.value);
     } else if (number1.value == '' && number2.value !== '') {
@@ -89,7 +93,7 @@ function saknisKubuClick() {
     } else if (number1.value == '' && number2.value == '') {
         alert("Norint ištraukti, kūbinę šaknį, būtina užpildyti vieną \"number\" laukelį");
         lygu.innerText = "Neleistinas veiksmas";
-    }
+    } 
 }
 
 function lyguClick() {

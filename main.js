@@ -7,6 +7,7 @@ const plius = document.querySelector('.plius');
 const minus = document.querySelector('.minus');
 const daugyba = document.querySelector('.daugyba');
 const dalyba = document.querySelector('.dalyba');
+const saknis = document.querySelector('.saknis');
 
 const lygu = document.querySelector('.lygu');
 
@@ -56,6 +57,23 @@ function dalybaClick() {
     }
 }
 
+function saknisClick() {
+    if (number1.value !== '' && number2.value == '') {
+        ats.innerText = Math.sqrt(parseInt(number1.value));
+        lygu.innerText = "Buvo ištraukta šaknis iš " + parseInt(number1.value);
+    } else if (number1.value == '' && number2.value !== '') {
+        ats.innerText = Math.sqrt(parseInt(number2.value));
+        lygu.innerText = "Buvo ištraukta šaknis iš " + parseInt(number2.value);
+    } else if (number1.value !== '' && number2.value !== '') {
+        alert("Neleistinas veiksmas. Norint ištraukti šaknį turi būti užpildytas tik vienas \"number\" laukelis.");
+        lygu.innerText = "Neleistinas veiksmas";
+    } else if (number1.value == '' && number2.value == '') {
+        alert("Norint ištraukti šaknį, būtina užpildyti vieną \"number\" laukelį");
+        lygu.innerText = "Neleistinas veiksmas";
+    }
+    
+}
+
 function lyguClick() {
     lygu.innerText = 'Istorija';
 }
@@ -76,6 +94,7 @@ plius.addEventListener('click', pliusClick);
 minus.addEventListener('click', minusClick);
 daugyba.addEventListener('click', daugybaClick);
 dalyba.addEventListener('click', dalybaClick);
+saknis.addEventListener('click', saknisClick);
 
 lygu.addEventListener('click', lyguClick);
 

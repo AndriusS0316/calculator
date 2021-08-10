@@ -35,6 +35,10 @@ button {
     background-color: yellowgreen;
     color: #fff;
 }
+.saknis {
+    background-color: rgb(255, 208, 0);
+    color: #fff;
+}
 .lygu {
     color: rgb(209, 221, 38);
     display: inline-block;

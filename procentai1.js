@@ -11,7 +11,7 @@ function skaiciuoti1Click() {
     if (kiekis1.value == '' || kiekis11.value == '') {
         alert("Norint apskaičiuoti procentus \"X\", visi puslapio laukeliai privalo būti užpildyti")
     } else {
-       x1.innerText = parseInt(kiekis11.value) * 100 / parseInt(kiekis1.value); 
+       x1.innerText = parseInt(kiekis11.value) * 100 / parseInt(kiekis1.value) + "%"; 
     }
 }
 

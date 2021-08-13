@@ -24,10 +24,10 @@ const number2 = document.querySelector('.number2');
 
 function pliusClick() {
     if (number1.value == '' || number2.value == '') {
-        lygu.innerText = "Norint atlikti sudėtį, turi irašyti abi \"number\" reikšmes";
+        lygu.innerText = "Norint atlikti sudėtį, turi įrašyti abi \"number\" reikšmes";
     } else {
         ats.innerText = parseInt(number1.value) + parseInt(number2.value);
-        lygu.innerText = "Prie " + parseInt(number1.value) + " buvo pridėta " + parseInt(number2.value);
+        lygu.innerText = "Prie " + parseInt(number1.value) + " buvo pridėta " + parseInt(number2.value); 
     }
 }
 
@@ -93,15 +93,15 @@ function saknisKubuClick() {
     // } else 
     if (number1.value !== '' && number2.value == '') {
         ats.innerText = Math.cbrt(parseInt(number1.value));
-        lygu.innerText = "Buvo ištraukta, kūbinė šaknis, iš " + parseInt(number1.value);
+        lygu.innerText = "Buvo ištraukta, kubinė šaknis, iš " + parseInt(number1.value);
     } else if (number1.value == '' && number2.value !== '') {
         ats.innerText = Math.cbrt(parseInt(number2.value));
-        lygu.innerText = "Buvo ištraukta, kūbinė šaknis, iš " + parseInt(number2.value);
+        lygu.innerText = "Buvo ištraukta, kubinė šaknis, iš " + parseInt(number2.value);
     } else if (number1.value !== '' && number2.value !== '') {
-        alert("Neleistinas veiksmas. Norint ištraukti kūbinę šaknį turi būti užpildytas tik vienas \"number\" laukelis.");
+        alert("Neleistinas veiksmas. Norint ištraukti kubinę šaknį turi būti užpildytas tik vienas \"number\" laukelis.");
         lygu.innerText = "Neleistinas veiksmas";
     } else if (number1.value == '' && number2.value == '') {
-        alert("Norint ištraukti, kūbinę šaknį, būtina užpildyti vieną \"number\" laukelį");
+        alert("Norint ištraukti, kubinę šaknį, būtina užpildyti vieną \"number\" laukelį");
         lygu.innerText = "Neleistinas veiksmas";
     } 
 }

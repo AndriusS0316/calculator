@@ -41,8 +41,14 @@ function minusClick() {
 }
 
 function daugybaClick() {
-    if (number1.value == '' || number2.value == '') {
+    if (number1.value == '' && number2.value == '') {
         lygu.innerText = "Norint atlikti daugybą, turi įrašyti abi \"number\" reikšmes";
+    } else if (number1.value !== '' && number2.value == '') {
+        lygu.innerText = parseInt(number1.value) + " buvo pakelta antruoju laipsniu"
+        ats.innerText = parseInt(number1.value) * parseInt(number1.value);
+    } else if (number1.value == '' && number2.value !== '') {
+        lygu.innerText = parseInt(number2.value) + " buvo pakelta antruoju laipsniu"
+        ats.innerText = parseInt(number2.value) * parseInt(number2.value);
     } else {
         ats.innerText = parseInt(number1.value) * parseInt(number2.value);
         lygu.innerText = parseInt(number1.value) + " buvo padauginta iš " + parseInt(number2.value);

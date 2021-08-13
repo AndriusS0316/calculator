@@ -43,7 +43,7 @@ function minusClick() {
 function daugybaClick() {
     if (number1.value == '' && number2.value == '') {
         lygu.innerText = "Norint atlikti daugybą, turi įrašyti abi \"number\" reikšmes";
-        alert("Norint skaičių pakelti antruoju laipsniu, turi užpildyti, tik vieną, \"number\" laukelį");
+        alert("Norint skaičių pakelti antruoju laipsniu, turi užpildyti, tik vieną, \"number\" laukelį. O norint atlikti daugybą, būtina užpildyti abi \"number\" reiksmes.");
     } else if (number1.value !== '' && number2.value == '') {
         lygu.innerText = parseInt(number1.value) + " buvo pakelta antruoju laipsniu"
         ats.innerText = parseInt(number1.value) * parseInt(number1.value);

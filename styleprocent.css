@@ -1,0 +1,43 @@
+body {
+    background-color: #eee;
+}
+
+form {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button {
+    color: white;
+    padding: 15px 40px;
+    font-size: 50px;
+    line-height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px #0002;
+}
+
+div {
+    display: inline-block;
+    gap: 20px;
+    position: absolute;
+    top: -230%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 55px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: "----";
+}
+.procentai {
+    padding: 23px 55px;
+    background-color: rgb(221, 38, 123);
+}
+.kiekis {
+    padding: 23px 55px;
+    background-color: rgb(209, 221, 38);
+}

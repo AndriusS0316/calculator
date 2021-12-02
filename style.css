@@ -1,0 +1,121 @@
+body {
+    background-color: #eee;
+}
+
+form {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button {
+    padding: 15px 40px;
+    font-size: 50px;
+    line-height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px #0002;
+}
+.minus {
+    background-color: red;
+    color: #fff;
+}
+.plius {
+    background-color: green;
+    color: #fff;
+}
+.dalyba {
+    background-color: orangered;
+    color: #fff;
+}
+.daugyba {
+    background-color: yellowgreen;
+    color: #fff;
+}
+.saknis {
+    background-color: rgb(255, 208, 0);
+    color: #fff;
+}
+.saknisKubu {
+    background-color: rgb(240, 200, 23);
+    color: #fff;
+}
+.lygu {
+    color: rgb(209, 221, 38);
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: "----";
+}
+.procentai {
+    background-color: rgb(221, 38, 123);
+    color: #fff;
+    display: flex;
+    padding: 15px 207px;
+    position: absolute;
+    top: 300%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 10px;
+}
+.number1 {
+    padding: 15px 220px;
+    display: flex;
+    position: absolute;
+    top: -290%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 15px;
+}
+.number2 {
+    padding: 15px 220px;
+    display: flex;
+    position: absolute;
+    top: -180%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 15px;
+}
+
+::placeholder {
+    font-size: 25px;
+}
+
+span {
+    padding: 15px 220px;
+    display: flex;
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: "----";
+}
+.restart {
+    background-color: rgb(38, 221, 151);
+    color: #fff;
+    display: flex;
+    padding: 21px 150px;
+    position: absolute;
+    top: 441%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 10px;
+}
